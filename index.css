@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #2d3748;
+  background: #fafafa;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.site-header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.site-header .logo img {
+  display: block;
+  height: 52px;
+  width: auto;
+  mix-blend-mode: multiply;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: #6c5ce7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  line-height: 0;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Ayuda */
+.split {
+  padding: 60px 0;
+}
+
+.help-title {
+  margin: 0 0 40px;
+  text-align: left;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #6c5ce7;
+}
+
+.split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.split-text h2 {
+  margin: 0 0 16px;
+  font-size: 2.4rem;
+  color: #2d3748;
+}
+
+.help h3 {
+  margin: 0 0 12px;
+  font-size: 1.3rem;
+  color: #6c5ce7;
+}
+
+.split-text p {
+  margin: 0 0 24px;
+  font-size: 1.1rem;
+  color: #718096;
+  line-height: 1.6;
+}
+
+.split-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #6c5ce7;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.btn-whatsapp {
+  background: #25d366;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5a;
+}
+
+/* Pie de página */
+.site-footer {
+  background: #6c5ce7;
+  color: #fff;
+  padding: 32px 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.footer-inner p {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.social {
+  display: flex;
+  gap: 14px;
+}
+
+.social img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.social a:hover img {
+  transform: translateY(-3px);
+}
+
+/* Celular */
+@media (max-width: 768px) {
+  .split-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .help-title {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+  }
+
+  .footer-inner {
+    align-items: center;
+    text-align: center;
+  }
+}
